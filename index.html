@@ -1,10 +1,107 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Simran Jaiswal - Portfolio</title>
-</head>
-<body>
-  <h1>Hi, I’m Simran 👋</h1>
-  <p>This is my portfolio hosted on GitHub Pages.</p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simran Jaiswal | Portfolio</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans bg-gray-50 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-white shadow z-50">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Simran Jaiswal</h1>
+        <div class="space-x-6 hidden md:flex">
+          <a href="#about" class="hover:text-blue-600">About</a>
+          <a href="#work" class="hover:text-blue-600">Work</a>
+          <a href="#services" class="hover:text-blue-600">Services</a>
+          <a href="#contact" class="hover:text-blue-600">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6">
+      <h1 class="text-5xl font-bold mb-4">Hi, I'm Simran 👋</h1>
+      <p class="text-xl max-w-2xl">I create engaging digital content that tells stories.</p>
+      <div class="mt-6 space-x-4">
+        <a href="#work" class="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow hover:bg-gray-100">View My Work</a>
+        <a href="#contact" class="px-6 py-3 border border-white font-semibold rounded-lg hover:bg-white hover:text-blue-600">Contact Me</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-20">
+      <h2 class="text-3xl font-bold mb-6 text-center">About Me</h2>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <img src="https://via.placeholder.com/150" alt="profile" class="w-40 h-40 rounded-full object-cover shadow-lg" />
+        <p class="text-lg text-gray-700">
+          I'm a passionate content creator with experience in video editing, photography, 
+          and storytelling. I love creating engaging visuals that connect with people and brands.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="work" class="bg-gray-50 py-20 px-6">
+      <h2 class="text-3xl font-bold mb-10 text-center">My Work</h2>
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden">
+          <img src="https://via.placeholder.com/400x250" alt="work1" class="w-full h-56 object-cover" />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">YouTube Vlog</h3>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden">
+          <img src="https://via.placeholder.com/400x250" alt="work2" class="w-full h-56 object-cover" />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Instagram Reel</h3>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden">
+          <img src="https://via.placeholder.com/400x250" alt="work3" class="w-full h-56 object-cover" />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Photography Shoot</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="max-w-6xl mx-auto px-6 py-20">
+      <h2 class="text-3xl font-bold mb-10 text-center">Services</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-3">🎥 Video Editing</h3>
+          <p class="text-gray-600">High-quality edits for YouTube & social media.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-3">📸 Photography</h3>
+          <p class="text-gray-600">Professional photography & retouching.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-3">✍️ Copywriting</h3>
+          <p class="text-gray-600">Engaging captions & storytelling.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-blue-600 text-white py-20 px-6">
+      <h2 class="text-3xl font-bold mb-6 text-center">Contact Me</h2>
+      <form class="max-w-xl mx-auto bg-white text-black p-6 rounded-xl shadow space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded" />
+        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded" />
+        <textarea placeholder="Your Message" rows="5" class="w-full p-3 border rounded"></textarea>
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6">
+      <p>&copy; 2025 Simran Jaiswal. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
